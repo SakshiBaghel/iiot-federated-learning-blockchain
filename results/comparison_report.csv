@@ -1,0 +1,5 @@
+Configuration,Data Privacy Preserved,Accuracy (%),Precision (%),Recall (%),F1-Score,False Positive Rate (%),Training Time (s),Communication Overhead (KB),Blockchain Overhead (ms),Audit Integrity
+1. Centralized ML,No (Raw Data Uploaded),93.67,88.74,93.81,0.912,6.41,1.323,281.2,0.0,None (No Ledger)
+2. Independent Local ML,Yes (Local Only),91.39,86.63,90.95,0.8823,8.38,0.265,0.0,0.0,None (Local Logs Only)
+3. Federated Learning (FedAvg),Yes (Weights Only),93.17,88.58,92.38,0.9044,6.41,1.52,125.9,0.0,None (Vulnerable to Tampering)
+4. Federated Learning + Blockchain,Yes (Weights Only),93.17,88.58,92.38,0.9044,6.41,1.581,125.9,0.13,Guaranteed (SHA-256 Ledger)
